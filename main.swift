@@ -1,4 +1,9 @@
-
+//
+//  Product.swift
+//  1,2HomeWork
+//
+//  Created by Байгелди Акылбек уулу on 20/10/22.
+//
 
 import Foundation
 
