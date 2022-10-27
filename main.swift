@@ -89,38 +89,40 @@ car2.upgrade()
 class Shop{
 
     var nameOfShop = "Globus"
-    var products = ["Pepsi":70,"Bread":30,"Milk":68,"Eqqs":150]
-    
+    var products = ["Pepsi 70","Bread 30","Milk 68","Eqqs 150"]
+    var str = ""
     
     func showProducts(){
-        
-        print(products)
-        print()
+        for x in products{
+        str += ("\(x) ")
     }
-
-    func addToShop(name: String, price: Int) {
-        products["\(name)"] = price
-    }
+    print(str)
+    str = ""
+}
 }
 
-class Product{
+class NewProduct{
 
-    var name: String
-    var price: Int
+    var nameAndPrice: String
 
-    init(name: String, price: Int){
-        self.name = name
-        self.price = price
+
+    init(nameAndPrice: String){
+        self.nameAndPrice = nameAndPrice
     }
-}
+        func addToShop(){
+            shop.products.append(nameAndPrice)
+        }
+    }
+
 
 
 var shop = Shop()
 shop.showProducts()
 
-var product1 = Product(name: "Potato", price: 35)
-
-shop.addToShop(name: product1.name, price: product1.price)
+var product1 = NewProduct(nameAndPrice: "Potato 45")
+product1.addToShop()
+var product2 = NewProduct(nameAndPrice: "Salt 20")
+product2.addToShop()
 shop.showProducts()
 
 
