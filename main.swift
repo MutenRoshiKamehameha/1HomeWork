@@ -267,5 +267,5 @@ var planet1 = Planets(name: "Saturn", radius: 45435354, massa: "34545345", sputn
 nebtelo1.objectInfo()
 star1.objectInfo()
 planet1.objectInfo()
-
+ 
 
